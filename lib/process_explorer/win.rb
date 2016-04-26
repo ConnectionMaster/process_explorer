@@ -9,12 +9,12 @@ module ProcessExplorer
 
       result = []
       procs.InstancesOf("win32_process").each do |process|
-      	result << { 
-	            name: process.name,
-		    pid: process.processId 
-		  }
+        result << {
+          name: process.name,
+          pid: process.processId
+        }
       end
-      
+
       result
     end
 
